@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using Cinemachine;
 
 public class Sniper : MonoBehaviour
 {
@@ -9,10 +11,12 @@ public class Sniper : MonoBehaviour
 
     private void Update()
     {
+        this.gameObject.transform.rotation = cameraTransform.rotation;
+        
         if (Input.GetMouseButtonDown(0))
         {   
-            var bullet = GameObject.Instantiate(bulletPrefab, shotpoint.transform.position, Quaternion.identity);
-            bullet.GetComponent<Rigidbody>().AddForce(Vector3.forward * force,ForceMode.Impulse);
+            var bullet = GameObject.Instantiate(bulletPrefab, shotpoint.transform.position, cameraTransform.rotation);
+            bullet.GetComponent<Rigidbody>().AddForce(-shotpoint.forward * force,ForceMode.Impulse);
         }
     }
 }
