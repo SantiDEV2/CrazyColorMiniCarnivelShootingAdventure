@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.08030984, g: 0.099685356, b: 0.30091658, a: 1}
+  m_IndirectSpecularColor: {r: 0.08025984, g: 0.099633306, b: 0.30086023, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -135,8 +135,8 @@ GameObject:
   - component: {fileID: 48393999}
   - component: {fileID: 48393998}
   - component: {fileID: 48393997}
-  - component: {fileID: 48393996}
   - component: {fileID: 48393995}
+  - component: {fileID: 48394000}
   m_Layer: 0
   m_Name: Diana (5)
   m_TagString: Untagged
@@ -152,7 +152,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 48393993}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 3.1240013, y: 4.8620005, z: 9.791}
+  m_LocalPosition: {x: 3.1240013, y: 4.8620005, z: 9.54}
   m_LocalScale: {x: 1, y: 1, z: 0.100000046}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -171,19 +171,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77ba99a7cd3330429f346c7d12507d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &48393996
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 48393993}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.39999998
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &48393997
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -250,6 +237,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 48393993}
   m_Mesh: {fileID: 2534964839176971238, guid: e7097d15d4ee1ad4e80887357ed6f523, type: 3}
+--- !u!65 &48394000
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48393993}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.79999995, y: 0.79999995, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &102837197 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6167291498597825773, guid: dbf24c49cee2a0843ba6ea46cc053f89, type: 3}
@@ -267,8 +267,8 @@ GameObject:
   - component: {fileID: 127881953}
   - component: {fileID: 127881952}
   - component: {fileID: 127881951}
-  - component: {fileID: 127881950}
   - component: {fileID: 127881949}
+  - component: {fileID: 127881955}
   m_Layer: 0
   m_Name: Diana (6)
   m_TagString: Untagged
@@ -288,19 +288,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77ba99a7cd3330429f346c7d12507d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &127881950
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 127881948}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.39999998
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &127881951
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -375,13 +362,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127881948}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: -3.126001, y: 3.362, z: 9.791}
+  m_LocalPosition: {x: -3.126001, y: 3.362, z: 9.55}
   m_LocalScale: {x: 1, y: 1, z: 0.100000046}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!65 &127881955
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127881948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.79999995, y: 0.79999995, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &264518233
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,8 +543,8 @@ GameObject:
   - component: {fileID: 498217707}
   - component: {fileID: 498217706}
   - component: {fileID: 498217705}
-  - component: {fileID: 498217704}
   - component: {fileID: 498217703}
+  - component: {fileID: 498217708}
   m_Layer: 0
   m_Name: Diana (3)
   m_TagString: Untagged
@@ -560,7 +560,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 498217701}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.62400013, y: 4.862, z: 9.791}
+  m_LocalPosition: {x: 0.62400013, y: 4.862, z: 9.54}
   m_LocalScale: {x: 1, y: 1, z: 0.100000046}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -579,19 +579,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77ba99a7cd3330429f346c7d12507d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &498217704
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 498217701}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.39999998
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &498217705
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -658,6 +645,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 498217701}
   m_Mesh: {fileID: 2534964839176971238, guid: e7097d15d4ee1ad4e80887357ed6f523, type: 3}
+--- !u!65 &498217708
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498217701}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.79999995, y: 0.79999995, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &509023047
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,7 +984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6167291498597825773, guid: dbf24c49cee2a0843ba6ea46cc053f89, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.5722859
+      value: 0.6629211
       objectReference: {fileID: 0}
     - target: {fileID: 6167291498597825773, guid: dbf24c49cee2a0843ba6ea46cc053f89, type: 3}
       propertyPath: m_LocalPosition.y
@@ -992,7 +992,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6167291498597825773, guid: dbf24c49cee2a0843ba6ea46cc053f89, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.7854959
+      value: -1.7775663
       objectReference: {fileID: 0}
     - target: {fileID: 6167291498597825773, guid: dbf24c49cee2a0843ba6ea46cc053f89, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1679,8 +1679,8 @@ GameObject:
   - component: {fileID: 1271908251}
   - component: {fileID: 1271908250}
   - component: {fileID: 1271908249}
-  - component: {fileID: 1271908248}
   - component: {fileID: 1271908247}
+  - component: {fileID: 1271908253}
   m_Layer: 0
   m_Name: Diana (11)
   m_TagString: Untagged
@@ -1700,19 +1700,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77ba99a7cd3330429f346c7d12507d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &1271908248
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1271908246}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.39999998
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1271908249
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1787,13 +1774,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271908246}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 3.1240013, y: 3.3620005, z: 9.791}
+  m_LocalPosition: {x: 3.1240013, y: 3.3620005, z: 9.55}
   m_LocalScale: {x: 1, y: 1, z: 0.100000046}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!65 &1271908253
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271908246}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.79999995, y: 0.79999995, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1428537632
 GameObject:
   m_ObjectHideFlags: 0
@@ -1806,8 +1806,8 @@ GameObject:
   - component: {fileID: 1428537637}
   - component: {fileID: 1428537636}
   - component: {fileID: 1428537635}
-  - component: {fileID: 1428537634}
   - component: {fileID: 1428537633}
+  - component: {fileID: 1428537639}
   m_Layer: 0
   m_Name: Diana (7)
   m_TagString: Untagged
@@ -1827,19 +1827,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77ba99a7cd3330429f346c7d12507d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &1428537634
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1428537632}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.39999998
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1428537635
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1914,13 +1901,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428537632}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: -1.8760004, y: 3.362, z: 9.791}
+  m_LocalPosition: {x: -1.8760004, y: 3.362, z: 9.55}
   m_LocalScale: {x: 1, y: 1, z: 0.100000046}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!65 &1428537639
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428537632}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.79999995, y: 0.79999995, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1604430137
 GameObject:
   m_ObjectHideFlags: 0
@@ -1933,8 +1933,8 @@ GameObject:
   - component: {fileID: 1604430142}
   - component: {fileID: 1604430141}
   - component: {fileID: 1604430140}
-  - component: {fileID: 1604430139}
   - component: {fileID: 1604430138}
+  - component: {fileID: 1604430144}
   m_Layer: 0
   m_Name: Diana (10)
   m_TagString: Untagged
@@ -1954,19 +1954,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77ba99a7cd3330429f346c7d12507d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &1604430139
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1604430137}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.39999998
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1604430140
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2041,13 +2028,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1604430137}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 1.8740005, y: 3.362, z: 9.791}
+  m_LocalPosition: {x: 1.8740005, y: 3.362, z: 9.55}
   m_LocalScale: {x: 1, y: 1, z: 0.100000046}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!65 &1604430144
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604430137}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.79999995, y: 0.79999995, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1625512413
 GameObject:
   m_ObjectHideFlags: 0
@@ -2060,8 +2060,8 @@ GameObject:
   - component: {fileID: 1625512418}
   - component: {fileID: 1625512417}
   - component: {fileID: 1625512416}
-  - component: {fileID: 1625512415}
   - component: {fileID: 1625512414}
+  - component: {fileID: 1625512420}
   m_Layer: 0
   m_Name: Diana (8)
   m_TagString: Untagged
@@ -2081,19 +2081,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77ba99a7cd3330429f346c7d12507d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &1625512415
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1625512413}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.39999998
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1625512416
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2168,13 +2155,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1625512413}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.62600017, y: 3.362, z: 9.791}
+  m_LocalPosition: {x: -0.62600017, y: 3.362, z: 9.55}
   m_LocalScale: {x: 1, y: 1, z: 0.100000046}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!65 &1625512420
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625512413}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.79999995, y: 0.79999995, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1628472923
 GameObject:
   m_ObjectHideFlags: 0
@@ -2307,7 +2307,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 180
+    max: 45
     bounciness: 0
     bounceMinVelocity: 0
     contactDistance: 0
@@ -2509,8 +2509,8 @@ GameObject:
   - component: {fileID: 1680836492}
   - component: {fileID: 1680836491}
   - component: {fileID: 1680836490}
-  - component: {fileID: 1680836489}
   - component: {fileID: 1680836488}
+  - component: {fileID: 1680836493}
   m_Layer: 0
   m_Name: Diana (2)
   m_TagString: Untagged
@@ -2526,7 +2526,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680836486}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.62600017, y: 4.862, z: 9.791}
+  m_LocalPosition: {x: -0.62600017, y: 4.862, z: 9.54}
   m_LocalScale: {x: 1, y: 1, z: 0.100000046}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2545,19 +2545,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77ba99a7cd3330429f346c7d12507d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &1680836489
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1680836486}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.39999998
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1680836490
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2624,6 +2611,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680836486}
   m_Mesh: {fileID: 2534964839176971238, guid: e7097d15d4ee1ad4e80887357ed6f523, type: 3}
+--- !u!65 &1680836493
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680836486}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.79999995, y: 0.79999995, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1686012118
 GameObject:
   m_ObjectHideFlags: 0
@@ -2855,7 +2855,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 180
+    max: 45
     bounciness: 0
     bounceMinVelocity: 0
     contactDistance: 0
@@ -3077,8 +3077,8 @@ GameObject:
   - component: {fileID: 1880991747}
   - component: {fileID: 1880991746}
   - component: {fileID: 1880991745}
-  - component: {fileID: 1880991744}
   - component: {fileID: 1880991743}
+  - component: {fileID: 1880991748}
   m_Layer: 0
   m_Name: Diana (4)
   m_TagString: Untagged
@@ -3094,7 +3094,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880991741}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 1.8740005, y: 4.862, z: 9.791}
+  m_LocalPosition: {x: 1.8740005, y: 4.862, z: 9.54}
   m_LocalScale: {x: 1, y: 1, z: 0.100000046}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3113,19 +3113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77ba99a7cd3330429f346c7d12507d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &1880991744
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1880991741}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.39999998
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1880991745
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3192,6 +3179,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880991741}
   m_Mesh: {fileID: 2534964839176971238, guid: e7097d15d4ee1ad4e80887357ed6f523, type: 3}
+--- !u!65 &1880991748
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880991741}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.79999995, y: 0.79999995, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1949762987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3373,8 +3373,8 @@ GameObject:
   - component: {fileID: 1965303347}
   - component: {fileID: 1965303346}
   - component: {fileID: 1965303345}
-  - component: {fileID: 1965303344}
   - component: {fileID: 1965303343}
+  - component: {fileID: 1965303348}
   m_Layer: 0
   m_Name: Diana (1)
   m_TagString: Untagged
@@ -3390,7 +3390,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965303341}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: -1.8760004, y: 4.862, z: 9.791}
+  m_LocalPosition: {x: -1.8760004, y: 4.862, z: 9.54}
   m_LocalScale: {x: 1, y: 1, z: 0.100000046}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3409,19 +3409,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77ba99a7cd3330429f346c7d12507d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &1965303344
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965303341}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.39999998
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1965303345
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3488,6 +3475,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965303341}
   m_Mesh: {fileID: 2534964839176971238, guid: e7097d15d4ee1ad4e80887357ed6f523, type: 3}
+--- !u!65 &1965303348
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965303341}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.79999995, y: 0.79999995, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1967821585
 GameObject:
   m_ObjectHideFlags: 0
@@ -3953,8 +3953,8 @@ GameObject:
   - component: {fileID: 2067990590}
   - component: {fileID: 2067990589}
   - component: {fileID: 2067990588}
-  - component: {fileID: 2067990587}
   - component: {fileID: 2067990586}
+  - component: {fileID: 2067990592}
   m_Layer: 0
   m_Name: Diana (9)
   m_TagString: Untagged
@@ -3974,19 +3974,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77ba99a7cd3330429f346c7d12507d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &2067990587
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2067990585}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.39999998
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &2067990588
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4061,13 +4048,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067990585}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.62400013, y: 3.362, z: 9.791}
+  m_LocalPosition: {x: 0.62400013, y: 3.362, z: 9.55}
   m_LocalScale: {x: 1, y: 1, z: 0.100000046}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!65 &2067990592
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067990585}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.79999995, y: 0.79999995, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2086446352
 GameObject:
   m_ObjectHideFlags: 0
@@ -4125,7 +4125,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132147836148347}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: -3.126001, y: 4.862, z: 9.791}
+  m_LocalPosition: {x: -3.126001, y: 4.862, z: 9.54}
   m_LocalScale: {x: 1, y: 1, z: 0.100000046}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4152,8 +4152,8 @@ GameObject:
   - component: {fileID: 3469287837769469796}
   - component: {fileID: 1711813854847433646}
   - component: {fileID: 1952168149}
-  - component: {fileID: 3469287837769469797}
   - component: {fileID: 3469287837769469798}
+  - component: {fileID: 3469287837769469799}
   m_Layer: 0
   m_Name: Diana
   m_TagString: Untagged
@@ -4352,19 +4352,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132147836148347}
   m_Mesh: {fileID: 2534964839176971238, guid: e7097d15d4ee1ad4e80887357ed6f523, type: 3}
---- !u!135 &3469287837769469797
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132147836148347}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.39999998
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3469287837769469798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4377,6 +4364,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77ba99a7cd3330429f346c7d12507d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3469287837769469799
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147836148347}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.79999995, y: 0.79999995, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3592422620083071625
 GameObject:
   m_ObjectHideFlags: 0

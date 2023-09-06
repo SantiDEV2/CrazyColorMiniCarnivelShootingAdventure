@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         _groundedPlayer = _controller.isGrounded;
         if (_groundedPlayer && _playerVelocity.y < 0)
         {
